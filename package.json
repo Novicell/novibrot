@@ -1,36 +1,7 @@
 {
-  "_from": "@frctl/mandelbrot@1.2.0",
-  "_id": "@frctl/mandelbrot@1.2.0",
-  "_inBundle": false,
-  "_integrity": "sha1-gBFkqO/rU1PnTmGjJt7PEAeuYh0=",
-  "_location": "/@frctl/mandelbrot",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "@frctl/mandelbrot@1.2.0",
-    "name": "@frctl/mandelbrot",
-    "escapedName": "@frctl%2fmandelbrot",
-    "scope": "@frctl",
-    "rawSpec": "1.2.0",
-    "saveSpec": null,
-    "fetchSpec": "1.2.0"
-  },
-  "_requiredBy": [
-    "#DEV:/",
-    "/@frctl/fractal"
-  ],
-  "_resolved": "https://registry.npmjs.org/@frctl/mandelbrot/-/mandelbrot-1.2.0.tgz",
-  "_shasum": "801164a8efeb5353e74e61a326decf1007ae621d",
-  "_spec": "@frctl/mandelbrot@1.2.0",
-  "_where": "/Users/bsj/www/novicell/styleguide-novicell",
-  "author": {
-    "name": "Mark Perkins",
-    "email": "mark@clearleft.com",
-    "url": "http://clearleft.com/"
-  },
+  "author": "Brian Stefan Jensen <bsj@novicell.dk> (https://novicell.dk/)",
   "bugs": {
-    "url": "https://github.com/frctl/mandelbrot/issues"
+    "url": "https://github.com/Novicell/novibrot/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
@@ -39,7 +10,7 @@
     "lodash": "^4.12.0"
   },
   "deprecated": false,
-  "description": "The default theme for Fractal.",
+  "description": "Novicell Fractal theme.",
   "devDependencies": {
     "babel-preset-es2015": "^6.5.0",
     "babelify": "^7.2.0",
@@ -64,20 +35,26 @@
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
   },
-  "homepage": "https://github.com/frctl/mandelbrot#readme",
+  "homepage": "https://github.com/Novicell/novibrot#readme",
   "license": "MIT",
   "main": "index.js",
-  "name": "@frctl/mandelbrot",
+  "name": "@novicell/novibrot",
   "peerDependencies": {
     "@frctl/fractal": ">= 1.1.0-alpha.0 < 2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frctl/mandelbrot.git"
+    "url": "git+https://github.com/Novicell/novibrot"
   },
   "scripts": {
     "build": "gulp",
     "prepublish": "npm run build"
   },
-  "version": "1.2.0"
+  "version": "1.0.0-beta.0",
+  "keywords": [
+    "novicell",
+    "novibrot",
+    "fractal",
+    "theme"
+  ]
 }
