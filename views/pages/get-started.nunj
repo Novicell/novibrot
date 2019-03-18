@@ -1,0 +1,36 @@
+{% extends "layouts/doc.nunj"%}
+{% import "macros/status.nunj" as status %}
+
+{% set pathParam = request.params.path %}
+{% set doc = frctl.docs.find('path', pathParam | default('')) %}
+
+{% if pathParam and not doc %}{{ throw(404, 'Page not found') }}{% endif %}
+
+{% set page = {
+    title: "Get started"
+} %}
+
+{% set status = status.tag(doc.status) %}
+
+{% block docContent %}
+
+<h2>How to use Novicells Styleguide & Design System</h2>
+<p>Etiam habebis sem dicantur magna mollis euismod. Nihil hic munitissimus habendi senatus locus, nihil horum? Integer legentibus erat a ante historiarum dapibus. Quam temere in vitiis, legem sancimus haerentia. Donec sed odio operae, eu vulputate felis rhoncus.</p>
+<p>Target audience are employees, partners and others who are in need of Novicell identity information, logos etc.</p>
+<p>Quis aute iure reprehenderit in voluptate velit esse. Non equidem invideo, miror magis posuere velit aliquet. Inmensae subtilitatis, obscuris et malesuada fames. A communi observantia non est recedendum. Quam diu etiam furor iste tuus nos eludet? Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.</p>
+
+{% block pageContent %}
+{% import "macros/errors.nunj" as errors %}
+{% if doc %}
+    {% set contents = doc.render(null, renderEnv) | async(true) %}
+    {% if contents | isError %}
+    {{ errors.renderError('page', contents.message) }}
+    {% else %}
+    {{ contents }}
+    {% endif %}
+{% else %}
+{% include 'partials/content/overview.nunj' %}
+{% endif %}
+{% endblock %}
+
+{% endblock %}

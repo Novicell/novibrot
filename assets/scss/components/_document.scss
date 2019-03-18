@@ -1,0 +1,42 @@
+.Document {
+    @include mq($until: navCollapse) {
+        padding: 1.25rem 1rem;
+    }
+}
+
+.Document-header {
+    display: flex;
+    max-width: 70vw;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid $color-frame-border;
+    padding: 3.5rem 3rem;
+
+    h1 {
+        font-size: 50px;
+        font-weight: 100;
+    }
+
+    .Status {
+        @include margin-inline(start, auto);
+    }
+}
+
+.Document-content {
+    padding: 1.5rem 0 3rem 3rem;
+    max-width: 70vw;
+}
+
+.Frame.is-closed {
+    .Document-header {
+        max-width: 80vw;
+        padding-left: 5rem;
+    }
+
+    .Document-content {
+        max-width: 80vw;
+    }
+}
+
+.Document-title {
+    @include font(title);
+}

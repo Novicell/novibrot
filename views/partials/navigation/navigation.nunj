@@ -1,0 +1,31 @@
+<nav class="Navigation">
+
+<div class="Tree" data-behaviour="tree" id="tree-get-started">
+    <ul class="Tree-items Tree-depth-1">
+        <li class="Tree-item Tree-entity{% if isCurrent %} is-current{% endif %}"{% if isCurrent %} data-state="current"{% endif %} data-role="item">
+            <a class="Tree-entityLink" href="/get-started" data-pjax>
+                <span>Get started</span>
+            </a>
+        </li>
+        <li class="Tree-item Tree-entity{% if isCurrent %} is-current{% endif %}"{% if isCurrent %} data-state="current"{% endif %} data-role="item">
+            <a class="Tree-entityLink" href="/whats-new" data-pjax>
+                <span>What's new</span>
+            </a>
+        </li>
+        <li class="Tree-item Tree-entity{% if isCurrent %} is-current{% endif %}"{% if isCurrent %} data-state="current"{% endif %} data-role="item">
+            <a class="Tree-entityLink" href="/colors" data-pjax>
+                <span>Colors</span>
+            </a>
+        </li>
+        <li class="Tree-item Tree-entity{% if isCurrent %} is-current{% endif %}"{% if isCurrent %} data-state="current"{% endif %} data-role="item">
+            <a class="Tree-entityLink" href="/typography" data-pjax>
+                <span>Typography</span>
+            </a>
+        </li>                      
+    </ul>
+</div>
+
+{% for navPartial in frctl.theme.get('nav') %}
+    {% include 'partials/navigation/' + navPartial + '.nunj' %}
+{% endfor %}
+</nav>

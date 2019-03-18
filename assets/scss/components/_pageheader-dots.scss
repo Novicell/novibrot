@@ -1,0 +1,121 @@
+$pageheader-dots-background-color: #510034;
+$pageheader-dots-background-gradient: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px), transparent;
+$pageheader-dots-background-size: 40px 40px;
+$pageheader-dots-height: 100vh;
+$pageheader-dots-width: 100%;
+$pageheader-dots-padding: 10%;
+$pageheader-dots-padding-top: 20%;
+$pageheader-dots-padding-right: 10%;
+$pageheader-dots-padding-bottom: 10%;
+$pageheader-dots-padding-left: 10%;
+
+.pageheader-dots {
+    background-color: $pageheader-dots-background-color;
+    width: $pageheader-dots-width;
+    min-height: $pageheader-dots-height;
+
+    &__dots {
+        top: 0;
+        z-index: 1;
+        width: $pageheader-dots-width;
+        background: $pageheader-dots-background-gradient;
+        background-size: $pageheader-dots-background-size;
+        min-height: $pageheader-dots-height;
+    }    
+
+    &__wrapper {
+        min-height: $pageheader-dots-height;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: $pageheader-dots-padding;
+
+        @include mq($until: medium) {
+            padding-top: $pageheader-dots-padding-top;
+            padding-right: $pageheader-dots-padding-right;
+            padding-bottom: $pageheader-dots-padding-bottom;
+            padding-left: $pageheader-dots-padding-left;
+        }        
+    }
+
+    &__container {
+        color: #fff;
+        flex: 1 1 auto;
+        width: $pageheader-dots-width;
+    }
+
+    &__top-heading {
+        font-size: 22px;
+        margin: 0px;
+        margin-bottom: 8px;
+
+    }
+
+    &__main-heading {
+        font-weight: 800;
+        font-size: 65px;
+        line-height: 82px;
+        margin: 0px;
+
+        @include mq($until: medium) {
+            font-size: 35px;
+            line-height: 42px;
+        }              
+    }
+
+    &__main-heading-shadow {
+        z-index: -1;
+        font-weight: 800;
+        font-size: 65px;
+        line-height: 82px;
+        margin: 20px;
+        position: relative;
+        color: rgba(000, 000, 000, 0.2);
+
+        @include mq($until: medium) {
+            font-size: 35px;
+            line-height: 42px;
+        }           
+    }
+
+    &__sub-heading {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 40px;
+        margin-top: 30px;
+    }
+
+    &__button {
+        a {
+            background-image: none; /* Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214*/
+            border-radius: 20px;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 50px;
+            margin-top: 50px;
+            padding: 0 30px;
+            text-align: center;
+            text-decoration: none;
+            transition: background .3s, color .3s, border-color .3s;
+    
+            background-color: #c60b48;
+            color: #fff;
+            border: 1px solid transparent;
+        }
+       
+        a:hover,
+        a:focus {
+            color: #c60b48;
+            background: #fff;
+            text-decoration: none;
+            outline: none;
+        }        
+       
+        @include mq($until: medium) {
+            display: block;
+        }        
+    }
+}

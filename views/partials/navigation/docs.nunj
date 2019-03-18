@@ -1,0 +1,13 @@
+{% if frctl.docs.size %}
+
+{#
+    Where is this included?
+
+    Commenting out for now, we should probably remove the include if we don't want to use it.
+
+    <div class="Navigation-group">
+    {{ nav.tree(frctl.docs, doc, request) }}
+    </div>
+
+#}
+{% endif %}

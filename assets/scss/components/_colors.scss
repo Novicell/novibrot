@@ -1,0 +1,109 @@
+/*
+ * Color
+ */
+
+/* Novicell color */
+$color-red: #c80046;
+$color-berry: #7c0435;
+$color-plum: #510035;
+$color-spearmint: #75bc7f;
+$color-longfarm-blue: #c0e3de;
+$color-pepper: #232323;
+$color-white-trufle: #f2f2f2;
+$color-platinum: #eaeaea;
+$color-gray: #bbbbbb;
+$color-taupe-gray: #909090;
+
+/* Semantic names */
+$color-primary: $color-red;
+$color-secondary: #363636;
+
+/* Grayscale */
+$color-gray-dark: #4b4b4b;
+$color-gray: #acacac;
+$color-gray-light: #d7d7d7;
+$color-white: #ffffff;
+$color-black: #000000;
+
+/* Text */
+$color-text: #363636;
+
+/* Social */
+$color-facebook: #3b5998;
+$color-twitter: #00aced;
+$color-google-plus: #d34836;
+
+/* States */
+$color-success: #2ecc71;
+$color-warning: #f1c40f;
+$color-danger: #e74c3c;
+
+.colors {
+    &--wrapper {
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+        margin-top: 3rem;
+        overflow: hidden;
+    }
+
+    &--content {
+        padding: 1rem;
+    }
+
+    &--palette {
+        height: 250px;
+        width: 100%;
+    }
+
+    &--palette__red {
+        background-color: $color-red;
+    }
+
+    &--palette__berry {
+        background-color: $color-berry;
+    }
+
+    &--palette__plum {
+        background-color: $color-plum;
+    }
+
+    &--palette__spearmint {
+        background-color: $color-spearmint;
+    }
+
+    &--palette__longfarm-blue {
+        background-color: $color-longfarm-blue;
+    }
+
+    &--palette__pepper {
+        background-color: $color-pepper;
+    }    
+
+    &--palette__white-trufle {
+        background-color: $color-white-trufle;
+    }    
+
+    &--palette__platinum {
+        background-color: $color-platinum;
+    }    
+
+    &--palette__gray {
+        background-color: $color-gray;
+    }    
+
+    &--palette__taupe-gray {
+        background-color: $color-taupe-gray;
+    }    
+
+    span {
+        display: block;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    &--name {
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+}

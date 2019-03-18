@@ -1,0 +1,4 @@
+<a href="/" title="Novicell Styleguide & Design System" class="Frame-logo">
+    {# TODO: Replace hardcoded URL with theme path #}
+    <img src="/themes/novicell/img/logo.svg" class="Frame-logo--image">
+</a>

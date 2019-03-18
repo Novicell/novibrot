@@ -1,0 +1,49 @@
+.Header-button {
+    display: block;
+    border: 0;
+    height: 5rem;
+    width: 5rem;
+    touch-action: manipulation;
+    color: inherit;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+.Frame.is-closed .Header-button {
+    left: 0;
+
+    svg {
+        fill: #510034;
+    }
+}
+
+.Header-navToggle {
+    svg {
+        display: none;
+        margin: 0 auto;
+        fill: $color-header-content;
+    }
+}
+
+.Frame {
+    .Header-navToggleIcon--open {
+        display: block;
+    }
+}
+
+.Frame.is-closed {
+    .Header-navToggleIcon--open {
+        display: none;
+    }
+    .Header-navToggleIcon--closed {
+        display: block;
+    }
+}
