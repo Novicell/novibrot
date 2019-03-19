@@ -15,14 +15,14 @@ module.exports = function(options){
         scripts: 'default',
         format: 'json',
         static: {
-            mount: 'themes/novicell',
+            mount: '@novicell/novibrot',
         },
         version: packageJSON.version,
         favicon: null
     });
 
     config.panels  = config.panels || ['html', 'view', 'context', 'resources', 'info', 'notes'];
-    config.nav     = config.nav || ['components','docs','assets'];
+    config.nav     = config.nav || ['docs','components','assets'];
     config.styles  = [].concat(config.styles).concat(config.stylesheet).filter(url => url).map(url => (url === 'default' ? `/${config.static.mount}/css/${config.skin}.css` : url));
     config.scripts = [].concat(config.scripts).filter(url => url).map(url => (url === 'default' ? `/${config.static.mount}/js/mandelbrot.js` : url));
     config.favicon = config.favicon || `/${config.static.mount}/favicon.ico`;
@@ -40,25 +40,14 @@ module.exports = function(options){
         view: 'pages/home.nunj',
     });
 
-    theme.addRoute('/get-started', {
-        handle: 'get-started',
-        view: 'pages/get-started.nunj',
+    theme.addRoute('/', {
+        handle: 'overview',
+        view: 'pages/doc.nunj',
     });
 
-    theme.addRoute('/whats-new', {
-        handle: 'whats-new',
-        view: 'pages/whats-new.nunj',
-    });
-
-    theme.addRoute('/colors', {
-        handle: 'colors',
-        view: 'pages/colors.nunj',
-    });
-
-    theme.addRoute('/typography', {
-        handle: 'typography',
-        view: 'pages/typography.nunj',
-    });  
+    theme.addRoute('/docs', {
+        redirect: '/'
+    });    
 
     theme.addRoute('/components', {
         redirect: '/'

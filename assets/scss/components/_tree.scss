@@ -1,4 +1,4 @@
-l.Tree {
+.Tree {
     white-space: nowrap;
 }
 
@@ -44,7 +44,7 @@ l.Tree {
     }
 
     span {
-        @include padding-inline(start, 1rem);
+        @include padding-inline(start, 0);
         @include margin-inline(start, -1.5em);
         display: block;
         position: relative;
@@ -92,7 +92,7 @@ l.Tree {
 
 @for $i from 1 through 8 {
     .Tree-depth-#{$i} {
-        $padLeft: ($i * 1rem);
+        $padLeft: ($i * 2rem);
 
         .Tree-collectionLabel,
         .Tree-entityLink {
