@@ -77,12 +77,12 @@
     text-decoration: none;
 
     &:hover {
-        background-color: rgba($color-text, .25);
+        background-color: rgba(0, 0, 0, .1);
         color: #fff;
     }
 
     .is-current & {
-        background-color: rgba($color-text, .25);
+        background-color: rgba(0, 0, 0, .1);
     }
 
     .Status {
