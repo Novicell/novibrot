@@ -36,11 +36,6 @@ module.exports = function(options){
     theme.addStatic(Path.join(__dirname, '..' , 'dist'), `/${config.static.mount}`);
 
     theme.addRoute('/', {
-        handle: 'home',
-        view: 'pages/home.nunj',
-    });
-
-    theme.addRoute('/', {
         handle: 'overview',
         view: 'pages/doc.nunj',
     });

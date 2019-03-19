@@ -1,18 +1,35 @@
-{% import "macros/status.nunj" as status %}
+{% extends "layouts/skeleton.nunj" %}
 
-<p>You can browse the component library using the navigation on the left.</p>
+{% block page %}
 
-<h3>Component statuses</h3>
-<p>Components and their variants have been given statuses reflecting their state of completion. The available statuses are listed below.</p>
-<table>
-<tr>
-    <th>Label</th>
-    <th>Description</th>
-</tr>
-{% for handle, st in frctl.get('components.statuses') %}
-<tr>
-    <td>{{ status.tag(st) }}</td>
-    <td>{{ st.description }}</td>
-</tr>
-{% endfor %}
-</table>
+<div id="frame">
+
+    <div class="pageheader-dots">
+        <div class="pageheader-dots__dots">
+            <div class="pageheader-dots__wrapper">
+                <div class="pageheader-dots__container" >
+                    <p class="pageheader-dots__top-heading">Welcome to</p>
+                    <div id="js-pageheader-scene" >
+                        <p data-depth="0.2" class="pageheader-dots__main-heading">
+                            Novicell Styleguide &<br>
+                            Design System
+                        </p>
+                        <p data-depth="0.6" class="pageheader-dots__main-heading-shadow">
+                            Novicell Styleguide &<br>
+                            Design System
+                        </p>
+                    </div>
+                    <p class="pageheader-dots__sub-heading">Latest release: Spring 2019</p>
+                    <div class="pageheader-dots__button">
+                        <a href="/docs/get-started">Get started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+{% endblock %}

@@ -1,8 +1,11 @@
-{% extends "layouts/doc.nunj"%}
 {% import "macros/status.nunj" as status %}
 
 {% set pathParam = request.params.path %}
 {% set doc = frctl.docs.find('path', pathParam | default('')) %}
+
+{% if doc %}
+    {% extends "layouts/doc.nunj"%}
+{% endif %}
 
 {% if pathParam and not doc %}{{ throw(404, 'Page not found') }}{% endif %}
 
