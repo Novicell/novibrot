@@ -10,7 +10,7 @@
 {% if pathParam and not doc %}{{ throw(404, 'Page not found') }}{% endif %}
 
 {% set page = {
-    title: doc.title | default(frctl.get('project.title')) | default('Welcome to your component library')
+    title: doc.title | default(frctl.get('project.title')) | default('Novicell Styleguide & Design System')
 } %}
 
 {% set status = status.tag(doc.status) %}
