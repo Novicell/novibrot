@@ -82,6 +82,10 @@
         font: 100 1.3125rem/#{(24 / 14)} $font-family-sans-serif;
     }
 
+    @if $preset == tabCaption {
+        font: 100 1rem/#{(24 / 14)} $font-family-sans-serif;
+    }    
+
     @if $preset == code {
         font: 100 0.875rem/#{(24 / 14)} $font-family-monospace;
     }

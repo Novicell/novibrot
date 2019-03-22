@@ -23,7 +23,7 @@
 }
 
 .Meta-value {
-    @include font(caption);
+    @include font(tabCaption);
     display: block;
     min-width: 10rem;
     padding-bottom: 0.25rem;

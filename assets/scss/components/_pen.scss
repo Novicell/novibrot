@@ -18,8 +18,8 @@
 .Pen-header {
     display: flex;
     flex: 0 0 auto;
-    max-height: 3rem;
-    padding: 0.75rem;
+    height: 5rem;
+    padding: .75rem;
     align-items: center;
 
     .Status {
@@ -45,6 +45,12 @@
             color: transparent !important;
         }
     }
+}
+
+.Frame.is-closed {
+    .Pen-header {
+        padding-left: 4.5rem;    
+    }    
 }
 
 .Pen-title {
