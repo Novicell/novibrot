@@ -37,8 +37,8 @@ module.exports = function(options){
 
     theme.addRoute('/', {
         handle: 'overview',
-        view: 'pages/doc.nunj',
-    });
+        view: 'pages/doc.nunj'
+    }); 
 
     theme.addRoute('/docs', {
         redirect: '/'

@@ -5,6 +5,8 @@
 
 {% if doc %}
     {% extends "layouts/doc.nunj"%}
+{% else %}
+    {% extends "layouts/overview.nunj"%}
 {% endif %}
 
 {% if pathParam and not doc %}{{ throw(404, 'Page not found') }}{% endif %}
@@ -15,20 +17,36 @@
 
 {% set status = status.tag(doc.status) %}
 
-{% block docContent %}
-
-{% block pageContent %}
 {% import "macros/errors.nunj" as errors %}
 {% if doc %}
-    {% set contents = doc.render(null, renderEnv) | async(true) %}
-    {% if contents | isError %}
-    {{ errors.renderError('page', contents.message) }}
-    {% else %}
-    {{ contents }}
-    {% endif %}
-{% else %}
-{% include 'partials/content/overview.nunj' %}
-{% endif %}
-{% endblock %}
+    {% block docContent %}
 
-{% endblock %}
+        {% block pageContent %}
+
+        {% set contents = doc.render(null, renderEnv) | async(true) %}
+        
+        {% if contents | isError %}
+            {{ errors.renderError('page', contents.message) }}
+        {% else %}
+            {{ contents }}
+        {% endif %}
+
+        {% endblock %}
+
+    {% endblock %}
+
+{% else %}
+
+    {% block overviewContent %}
+
+        {% set doc = frctl.docs.find('path', 'overview' | default('')) %}
+        {% set contents = doc.render(null, renderEnv) | async(true) %}
+        {% if contents | isError %}
+            {{ errors.renderError('page', contents.message) }}
+        {% else %}
+            {{ contents }}
+        {% endif %}
+
+    {% endblock %}
+
+{% endif %}
