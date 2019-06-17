@@ -1,0 +1,55 @@
+/*
+ * Fonts
+ */
+
+.fonts {
+    &--wrapper {
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        margin-top: 3rem;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    &--content {
+        padding: 1rem;
+    }
+
+    &--palette {
+        font-size: 100px;
+        height: 150px;
+        width: 100%;
+    }
+
+    &--palette__light {
+        font-weight: 100;
+    }
+
+    &--palette__regular {
+        font-weight: 200;
+    }
+
+    &--palette__semibold {
+        font-weight: 300;
+    }
+
+    &--palette__bold {
+        font-weight: 600;
+    }
+
+    &--palette__extrabold {
+        font-weight: 700;
+    }
+
+    span {
+        display: block;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    &--name {
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+}
