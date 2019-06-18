@@ -2,6 +2,10 @@
  * Fonts
  */
 
+/**
+ * Fonts
+ */
+
 .fonts {
     &--wrapper {
         background-color: #fff;
@@ -17,21 +21,22 @@
     }
 
     &--palette {
+        border-bottom: 1px solid $color-gray-lighter;
         font-size: 100px;
         height: 150px;
         width: 100%;
     }
 
     &--palette__light {
-        font-weight: 100;
+        font-weight: 300;
     }
 
     &--palette__regular {
-        font-weight: 200;
+        font-weight: 400;
     }
 
     &--palette__semibold {
-        font-weight: 300;
+        font-weight: 500;
     }
 
     &--palette__bold {

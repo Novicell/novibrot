@@ -1,8 +1,7 @@
 /* Hack */
 @font-face {
     font-family: Hack;
-    src:
-        url("../fonts/hack-regular-webfont.woff2") format("woff2"),
+    src: url("../fonts/hack-regular-webfont.woff2") format("woff2"),
         url("../fonts/hack-regular-webfont.woff") format("woff");
     font-weight: 400;
     font-style: normal;
@@ -10,8 +9,7 @@
 
 @font-face {
     font-family: Hack;
-    src:
-        url("../fonts/hack-bold-webfont.woff2") format("woff2"),
+    src: url("../fonts/hack-bold-webfont.woff2") format("woff2"),
         url("../fonts/hack-bold-webfont.woff") format("woff");
     font-weight: bold;
     font-style: normal;
@@ -19,8 +17,7 @@
 
 @font-face {
     font-family: Hack;
-    src:
-        url("../fonts/hack-italic-webfont.woff2") format("woff2"),
+    src: url("../fonts/hack-italic-webfont.woff2") format("woff2"),
         url("../fonts/hack-italic-webfont.woff") format("woff");
     font-weight: 400;
     font-style: italic;
@@ -28,8 +25,7 @@
 
 @font-face {
     font-family: Hack;
-    src:
-        url("../fonts/hack-bolditalic-webfont.woff2") format("woff2"),
+    src: url("../fonts/hack-bolditalic-webfont.woff2") format("woff2"),
         url("../fonts/hack-bolditalic-webfont.woff") format("woff");
     font-weight: bold;
     font-style: italic;
@@ -38,8 +34,7 @@
 /* Open Sans */
 @font-face {
     font-family: "Open Sans";
-    src:
-        url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
         url("../fonts/OpenSans-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
@@ -47,8 +42,7 @@
 
 @font-face {
     font-family: "Open Sans";
-    src:
-        url("../fonts/OpenSans-Italic.woff2") format("woff2"),
+    src: url("../fonts/OpenSans-Italic.woff2") format("woff2"),
         url("../fonts/OpenSans-Italic.woff") format("woff");
     font-weight: normal;
     font-style: italic;
@@ -56,8 +50,7 @@
 
 @font-face {
     font-family: "Open Sans";
-    src:
-        url("../fonts/OpenSans-Semibold.woff2") format("woff2"),
+    src: url("../fonts/OpenSans-Semibold.woff2") format("woff2"),
         url("../fonts/OpenSans-Semibold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
@@ -65,9 +58,53 @@
 
 @font-face {
     font-family: "Open Sans";
-    src:
-        url("../fonts/OpenSans-SemiboldItalic.woff2") format("woff2"),
+    src: url("../fonts/OpenSans-SemiboldItalic.woff2") format("woff2"),
         url("../fonts/OpenSans-SemiboldItalic.woff") format("woff");
     font-weight: bold;
     font-style: italic;
+}
+
+@font-face {
+    font-family: "Averta";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Averta Light"), local("Averta-Light"),
+        url("../fonts/Averta-Light.woff2") format("woff2"),
+        url("../fonts/Averta-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Averta";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Averta Regular"), local("Averta-Regular"),
+        url("../fonts/Averta-Regular.woff2") format("woff2"),
+        url("../fonts/Averta-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Averta";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Averta Semibold"), local("Averta-Semibold"),
+        url("../fonts/Averta-Semibold.woff2") format("woff2"),
+        url("../fonts/Averta-Semibold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Averta";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Averta Bold"), local("Averta-Bold"),
+        url("../fonts/Averta-Bold.woff2") format("woff2"),
+        url("../fonts/Averta-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Averta";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Averta Extrabold"), local("Averta-Extrabold"),
+        url("../fonts/Averta-Extrabold.woff2") format("woff2"),
+        url("../fonts/Averta-Extrabold.woff") format("woff");
 }
