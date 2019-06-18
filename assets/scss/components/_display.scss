@@ -1,8 +1,8 @@
 /*
- * Fonts
+ * Display
  */
 
-.fonts {
+.display {
     &--wrapper {
         background-color: #fff;
         border-radius: 4px;
@@ -18,29 +18,11 @@
 
     &--palette {
         border-bottom: 1px solid $color-gray-lighter;
+        display: flex;
         font-size: 100px;
-        height: 150px;
+        padding-bottom: 20px;
+        padding-top: 20px;
         width: 100%;
-    }
-
-    &--palette__light {
-        font-weight: 300;
-    }
-
-    &--palette__regular {
-        font-weight: 400;
-    }
-
-    &--palette__semibold {
-        font-weight: 500;
-    }
-
-    &--palette__bold {
-        font-weight: 600;
-    }
-
-    &--palette__extrabold {
-        font-weight: 700;
     }
 
     span {
