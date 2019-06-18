@@ -50,7 +50,7 @@
         "build": "gulp",
         "prepublish": "npm run build"
     },
-    "version": "1.0.4",
+    "version": "1.0.5",
     "keywords": [
         "novicell",
         "novibrot",
